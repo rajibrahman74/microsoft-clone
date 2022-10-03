@@ -1,53 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Microsoft - Cloud, Computers, Apps &amp; Gaming</title>
-    <!-- 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft - Cloud, Computers, Apps &amp; Gaming</title>
+  <!-- 
         favicon
      -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <!-- 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- 
         coustom css link
      -->
-    <link rel="stylesheet" href="input.css" />
-  </head>
-  <body>
-    <!--
+  <link rel="stylesheet" href="input.css" />
+</head>
+
+<body>
+  <!--
         Header section
     -->
-    <header>
-      <nav class="navigation flex justify-between items-center p-4">
-        <div class="flex items-center justify-between md:order-2">
-          <div
-            class="nav-item-humburger inline-block p-4 cursor-pointer md:hidden"
-          >
-            <div class="line-one h-0.5 w-6 my-1 bg-black"></div>
-            <div class="line-two h-0.5 w-6 my-1 bg-black"></div>
-            <div class="line-three h-0.5 w-6 my-1 bg-black"></div>
-          </div>
-          <div class="search md:hidden">Search-icon</div>
+  <header class="container">
+    <nav class="navigation flex justify-between items-center p-4">
+      <div class="flex items-center justify-between md:order-2">
+        <div class="nav-item-humburger inline-block p-4 cursor-pointer md:hidden">
+          <div class="line-one h-0.5 w-6 my-1 bg-black"></div>
+          <div class="line-two h-0.5 w-6 my-1 bg-black"></div>
+          <div class="line-three h-0.5 w-6 my-1 bg-black"></div>
         </div>
-        <div class="logo text-center flex justify-center items-center md:order-1">
-          <div>Microsoft</div>
-          <div class="feature w-fit md:w-auto bg-gray-200 md:bg-white absolute md:static inset-0 md:flex md:mx-5 md:space-x-3 -translate-x-96 md:translate-x-0">
-            <div class="fitem">Microsoft 365</div>
-            <div class="fitem">Teams</div>
-            <div class="fitem">Windows</div>
-            <div class="fitem">Surface</div>
-            <div class="fitem">Xbox</div>
-            <div class="fitem">Deals</div>
-            <div class="fitem">Small Business</div>
-            <div class="fitem">Support</div>
-          </div>
+        <div class="search md:hidden">Search-icon</div>
+      </div>
+      <div class="logo text-center flex justify-center items-center md:order-1">
+        <div class="cursor-pointer"> <img class="w-28" src="images/ms-logo.png" alt=""></div>
+        <div
+          class="feature w-fit md:w-auto bg-gray-200 md:bg-white absolute md:static inset-0 md:flex md:mx-5 md:space-x-3 -translate-x-96 md:translate-x-0">
+          <div class="fitem">Microsoft 365</div>
+          <div class="fitem">Teams</div>
+          <div class="fitem">Windows</div>
+          <div class="fitem">Surface</div>
+          <div class="fitem">Xbox</div>
+          <div class="fitem">Deals</div>
+          <div class="fitem">Small Business</div>
+          <div class="fitem">Support</div>
         </div>
-        <div class="accounts-cart text-center md:order-3 flex">
-          <div class="search hidden md:block">Search-icon</div>
-          <div>Accounts and cart</div>
+      </div>
+      <div class="accounts-cart text-center md:order-3 flex">
+        <div class="search hidden md:block">Search-icon</div>
+        <div>Accounts and cart</div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 
+      main section
+     -->
+  <main>
+    <section class="container flex flex-col-reverse md:flex-row bg-[#f2f2f2] mx-auto">
+      <div class="left flex flex-col justify-center items-start md:items-baseline py-8 md:w-1/2">
+        <div class="heading my-2 mx-4 font-semibold">
+          <h1 class="text-2xl md:text-4xl">Save up to $400 on select</h1>
+          <h1 class="text-2xl md:text-4xl">Surface Pro 8</h1>
         </div>
-      </nav>
-    </header>
-  </body>
+        <p class="w-3/4 mx-4 my-2 md:text-start text-justify">Save big, right now on the most powerful Pro, featuring
+          the
+          performance of a laptop and the flexibility of a tablet. If you have questions before you buy, chat with a
+          product expert.</p>
+        <button class="border-none px-2 py-2 bg-[#0067b8] text-white font-semibold mx-4 my-2 rounded-l">Shop Surface Pro
+          8</button>
+      </div>
+      <div class="right md:w-1/2">
+        <img class="w-full md:w-full h-fit" src="images/slider1.png-removebg-preview.png" alt="">
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
