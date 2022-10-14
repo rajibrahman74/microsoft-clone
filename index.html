@@ -31,22 +31,29 @@
         <div class="search md:hidden w-6 cursor-pointer mr-6"><img class="" src="assets/search.svg" alt=""></div>
       </div>
       <div class="logo text-center flex justify-center md:order-1">
-        <div class="cursor-pointer"> <img class="w-[108px] flex justify-center items-start" src="assets/ms-logo.png" alt=""></div>
+        <div class="cursor-pointer flex justify-center items-center"> <img
+            class="w-[108px] flex justify-center items-start" src="assets/ms-logo.png" alt=""></div>
         <div
-          class="feature w-fit md:w-auto bg-gray-200 md:bg-white absolute md:static inset-0 md:flex md:justify-center md:items-end md:mx-5 md:space-x-5 -translate-x-96 md:translate-x-0 text-[13px] cursor-pointer mt-1 border-transparent">
-          <div class="fitem hover:border-b-2 border-black">Microsoft 365</div>
-          <div class="fitem hover:border-b-2 border-black">Teams</div>
-          <div class="fitem hover:border-b-2 border-black">Windows</div>
-          <div class="fitem hover:border-b-2 border-black">Surface</div>
-          <div class="fitem hover:border-b-2 border-black">Xbox</div>
-          <div class="fitem hover:border-b-2 border-black">Deals</div>
-          <div class="fitem hover:border-b-2 border-black">Small Business</div>
-          <div class="fitem hover:border-b-2 border-black">Support</div>
+          class="feature w-fit md:w-auto bg-gray-200 md:bg-white absolute md:static inset-0 md:flex md:justify-center md:items-end md:mx-5 md:space-x-5 -translate-x-96 md:translate-x-0 text-[13px] cursor-pointer mt-1">
+          <div class="fitem hover:underline hover:underline-offset-8">Microsoft 365</div>
+          <div class="fitem hover:underline hover:underline-offset-8">Teams</div>
+          <div class="fitem hover:underline hover:underline-offset-8">Windows</div>
+          <div class="fitem hover:underline hover:underline-offset-8">Surface</div>
+          <div class="fitem hover:underline hover:underline-offset-8">Xbox</div>
+          <div class="fitem hover:underline hover:underline-offset-8">Deals</div>
+          <div class="fitem hover:underline hover:underline-offset-8">Small Business</div>
+          <div class="fitem hover:underline hover:underline-offset-8">Support</div>
         </div>
       </div>
-      <div class="accounts-cart text-center md:order-3 flex">
-        <div class="search hidden md:block w-6 cursor-pointer mr-6"><img class="" src="assets/search.svg" alt=""></div>
-        <div>Accounts and cart</div>
+      <div class="accounts-cart text-center md:order-3 flex justify-center items-center space-x-2">
+        <div class="hidden md:block">Search</div>
+        <div class="search hidden md:block"><img class="w-5 cursor-pointer mr-1" src="assets/search.svg" alt=""></div>
+        <div class="flex justify-center items-center md:space-x-2">
+          <div class="hidden md:block">Cart</div>
+          <img class="w-6 cursor-pointer mr-6" src="assets/cart.svg" alt="">
+          <div class="hidden md:block">Sign in</div>
+          <img class="w-6 cursor-pointer mr-6" src="assets/account.svg" alt="">
+        </div>
       </div>
     </nav>
   </header>
@@ -79,35 +86,41 @@
     <!-- 
       second secton
      -->
-     <section class="">
-      <div class="promo md:flex flex-col md:flex-row md:justify-center md:items-center space-x-14 py-20">
+    <section class="">
+      <div
+        class="promo md:flex flex-col md:flex-row md:justify-center md:items-center md:space-x-14 space-y-4 md:space-y-0 py-20">
         <div class="item-one flex flex-col justify-center items-center space-y-1.5 text-[1rem] font-semibold underline">
           <img class="w-[40px]" src="assets/icon1.webp" alt="">
           <a class="text-[#0067b8]" href="#">Choose your Microsoft 365</a>
         </div>
-        <div class="item-two flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
+        <div
+          class="item-two flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
           <img class="w-[40px]" src="assets/icon2.webp" alt="">
           <a class="text-[#0067b8]" href="#">Shop Surface devices</a>
         </div>
-        <div class="item-three flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
+        <div
+          class="item-three flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
           <img class="w-[40px]" src="assets/icon3.webp" alt="">
           <a class="text-[#0067b8]" href="#">Buy Xbox games and consoles</a>
         </div>
-        <div class="item-four flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
+        <div
+          class="item-four flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
           <img class="w-[40px]" src="assets/icon4.webp" alt="">
           <a class="text-[#0067b8]" href="#">Get Windows 11</a>
         </div>
-        <div class="item-five flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
+        <div
+          class="item-five flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
           <img class="w-[40px]" src="assets/icon5.webp" alt="">
           <a class="text-[#0067b8]" href="#">Find your next PC</a>
         </div>
-        <div class="item-six flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
+        <div
+          class="item-six flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
           <img class="w-[40px]" src="assets/icon6.webp" alt="">
           <a class="text-[#0067b8]" href="#">Shop Business</a>
         </div>
       </div>
-     </section>
-    
+    </section>
+
   </main>
 </body>
 
