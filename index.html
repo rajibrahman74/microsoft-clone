@@ -9,7 +9,7 @@
   <!-- 
         favicon
      -->
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
   <!-- 
         coustom css link
      -->
@@ -20,32 +20,32 @@
   <!--
         Header section
     -->
-  <header class="container">
-    <nav class="navigation flex justify-between items-center p-4">
+  <header class="container md:px-14">
+    <nav class="navigation flex justify-between items-center py-2 md:p-4">
       <div class="flex items-center justify-between md:order-2">
         <div class="nav-item-humburger inline-block p-4 cursor-pointer md:hidden">
           <div class="line-one h-0.5 w-6 my-1 bg-black"></div>
           <div class="line-two h-0.5 w-6 my-1 bg-black"></div>
           <div class="line-three h-0.5 w-6 my-1 bg-black"></div>
         </div>
-        <div class="search md:hidden">Search-icon</div>
+        <div class="search md:hidden w-6 cursor-pointer mr-6"><img class="" src="assets/search.svg" alt=""></div>
       </div>
-      <div class="logo text-center flex justify-center items-center md:order-1">
-        <div class="cursor-pointer"> <img class="w-28" src="images/ms-logo.png" alt=""></div>
+      <div class="logo text-center flex justify-center md:order-1">
+        <div class="cursor-pointer"> <img class="w-[108px] flex justify-center items-start" src="assets/ms-logo.png" alt=""></div>
         <div
-          class="feature w-fit md:w-auto bg-gray-200 md:bg-white absolute md:static inset-0 md:flex md:mx-5 md:space-x-3 -translate-x-96 md:translate-x-0">
-          <div class="fitem">Microsoft 365</div>
-          <div class="fitem">Teams</div>
-          <div class="fitem">Windows</div>
-          <div class="fitem">Surface</div>
-          <div class="fitem">Xbox</div>
-          <div class="fitem">Deals</div>
-          <div class="fitem">Small Business</div>
-          <div class="fitem">Support</div>
+          class="feature w-fit md:w-auto bg-gray-200 md:bg-white absolute md:static inset-0 md:flex md:justify-center md:items-end md:mx-5 md:space-x-5 -translate-x-96 md:translate-x-0 text-[13px] cursor-pointer mt-1 border-transparent">
+          <div class="fitem hover:border-b-2 border-black">Microsoft 365</div>
+          <div class="fitem hover:border-b-2 border-black">Teams</div>
+          <div class="fitem hover:border-b-2 border-black">Windows</div>
+          <div class="fitem hover:border-b-2 border-black">Surface</div>
+          <div class="fitem hover:border-b-2 border-black">Xbox</div>
+          <div class="fitem hover:border-b-2 border-black">Deals</div>
+          <div class="fitem hover:border-b-2 border-black">Small Business</div>
+          <div class="fitem hover:border-b-2 border-black">Support</div>
         </div>
       </div>
       <div class="accounts-cart text-center md:order-3 flex">
-        <div class="search hidden md:block">Search-icon</div>
+        <div class="search hidden md:block w-6 cursor-pointer mr-6"><img class="" src="assets/search.svg" alt=""></div>
         <div>Accounts and cart</div>
       </div>
     </nav>
@@ -55,8 +55,11 @@
       main section
      -->
   <main>
-    <section class="container flex flex-col-reverse md:flex-row bg-[#f2f2f2] mx-auto">
-      <div class="left flex flex-col justify-center items-start md:items-baseline py-8 md:w-1/2">
+    <!-- 
+      hero section
+     -->
+    <section class="container flex justify-around flex-col-reverse md:flex-row bg-[#f2f2f2] md:px-24">
+      <div class="left flex flex-col justify-center items-start md:items-baseline py-3 md:w-1/2">
         <div class="heading my-2 mx-4 font-semibold">
           <h1 class="text-2xl md:text-4xl">Save up to $400 on select</h1>
           <h1 class="text-2xl md:text-4xl">Surface Pro 8</h1>
@@ -69,9 +72,42 @@
           8</button>
       </div>
       <div class="right md:w-1/2">
-        <img class="w-full md:w-full h-fit" src="images/slider1.png-removebg-preview.png" alt="">
+        <img class="w-full md:w-[615px]" src="assets/slider1.png-removebg-preview.png" alt="">
       </div>
     </section>
+
+    <!-- 
+      second secton
+     -->
+     <section class="">
+      <div class="promo md:flex flex-col md:flex-row md:justify-center md:items-center space-x-14 py-20">
+        <div class="item-one flex flex-col justify-center items-center space-y-1.5 text-[1rem] font-semibold underline">
+          <img class="w-[40px]" src="assets/icon1.webp" alt="">
+          <a class="text-[#0067b8]" href="#">Choose your Microsoft 365</a>
+        </div>
+        <div class="item-two flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
+          <img class="w-[40px]" src="assets/icon2.webp" alt="">
+          <a class="text-[#0067b8]" href="#">Shop Surface devices</a>
+        </div>
+        <div class="item-three flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
+          <img class="w-[40px]" src="assets/icon3.webp" alt="">
+          <a class="text-[#0067b8]" href="#">Buy Xbox games and consoles</a>
+        </div>
+        <div class="item-four flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
+          <img class="w-[40px]" src="assets/icon4.webp" alt="">
+          <a class="text-[#0067b8]" href="#">Get Windows 11</a>
+        </div>
+        <div class="item-five flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
+          <img class="w-[40px]" src="assets/icon5.webp" alt="">
+          <a class="text-[#0067b8]" href="#">Find your next PC</a>
+        </div>
+        <div class="item-six flex flex-col justify-center items-center space-y-1.5 text-[1rem]  font-semibold underline">
+          <img class="w-[40px]" src="assets/icon6.webp" alt="">
+          <a class="text-[#0067b8]" href="#">Shop Business</a>
+        </div>
+      </div>
+     </section>
+    
   </main>
 </body>
 
